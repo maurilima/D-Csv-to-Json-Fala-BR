@@ -1,0 +1,1251 @@
+object Dm: TDm
+  OldCreateOrder = False
+  Height = 446
+  Width = 705
+  object Conn: TFDConnection
+    Params.Strings = (
+      'Database=dadosaberto'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'Protocol=TCPIP'
+      'Server=localhost'
+      'DriverID=FB')
+    FormatOptions.AssignedValues = [fvMapRules]
+    FormatOptions.OwnMapRules = True
+    FormatOptions.MapRules = <
+      item
+        SourceDataType = dtDate
+        TargetDataType = dtDate
+      end>
+    ConnectedStoredUsage = []
+    Connected = True
+    LoginPrompt = False
+    Left = 25
+    Top = 18
+  end
+  object FmPedidos: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'IDPEDIDO'
+        Attributes = [faRequired]
+        DataType = ftInteger
+      end
+      item
+        Name = 'PROTOCOLOPEDIDO'
+        DataType = ftString
+        Size = 17
+      end
+      item
+        Name = 'ESFERA'
+        DataType = ftString
+        Size = 30
+      end
+      item
+        Name = 'UF'
+        DataType = ftString
+        Size = 60
+      end
+      item
+        Name = 'MUNICIPIO'
+        DataType = ftString
+        Size = 200
+      end
+      item
+        Name = 'ORGAODESTINATARIO'
+        DataType = ftString
+        Size = 250
+      end
+      item
+        Name = 'SITUACAO'
+        DataType = ftString
+        Size = 199
+      end
+      item
+        Name = 'DATAREGISTRO'
+        DataType = ftDate
+      end
+      item
+        Name = 'PRAZOATENDIMENTO'
+        DataType = ftDate
+      end
+      item
+        Name = 'FOIPRORROGADO'
+        Attributes = [faFixed]
+        DataType = ftFixedChar
+        Size = 3
+      end
+      item
+        Name = 'FOIREENCAMINHADO'
+        DataType = ftString
+        Size = 3
+      end
+      item
+        Name = 'FORMARESPOSTA'
+        DataType = ftString
+        Size = 200
+      end
+      item
+        Name = 'ORIGEMSOLICITACAO'
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'IDSOLICITANTE'
+        DataType = ftInteger
+      end
+      item
+        Name = 'ASSUNTOPEDIDO'
+        DataType = ftString
+        Size = 200
+      end
+      item
+        Name = 'SUBASSUNTOPEDIDO'
+        DataType = ftString
+        Size = 200
+      end
+      item
+        Name = 'DATARESPOSTA'
+        DataType = ftDate
+      end
+      item
+        Name = 'DECISAO'
+        DataType = ftString
+        Size = 100
+      end
+      item
+        Name = 'ESPECIFICACAODECISAO'
+        DataType = ftString
+        Size = 200
+      end>
+    IndexDefs = <>
+    AggregatesActive = True
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    FormatOptions.AssignedValues = [fvMaxBcdPrecision, fvMaxBcdScale]
+    FormatOptions.MaxBcdPrecision = 2147483647
+    FormatOptions.MaxBcdScale = 1073741823
+    ResourceOptions.AssignedValues = [rvPersistent, rvSilentMode]
+    ResourceOptions.Persistent = True
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable, uvAutoCommitUpdates]
+    UpdateOptions.LockWait = True
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 40
+    Top = 296
+    Content = {
+      414442530F000000250A0000FF00010001FF02FF0304001200000046006D0050
+      0065006400690064006F00730005000A0000005400610062006C006500060000
+      000000070000080032000000090000FF0AFF0B04001000000049004400500045
+      004400490044004F0005001000000049004400500045004400490044004F000C
+      00010000000E000D000F00011000011100011200011300100000004900440050
+      0045004400490044004F00FEFF0B04001E000000500052004F0054004F004300
+      4F004C004F00500045004400490044004F0005001E000000500052004F005400
+      4F0043004F004C004F00500045004400490044004F000C00020000000E001400
+      1500110000000F000116000110000117000111000112000113001E0000005000
+      52004F0054004F0043004F004C004F00500045004400490044004F0018001100
+      0000FEFF0B04000C00000045005300460045005200410005000C000000450053
+      0046004500520041000C00030000000E00140015001E0000000F000116000110
+      000117000111000112000113000C00000045005300460045005200410018001E
+      000000FEFF0B04000400000055004600050004000000550046000C0004000000
+      0E00140015003C0000000F000116000110000117000111000112000113000400
+      00005500460018003C000000FEFF0B0400120000004D0055004E004900430049
+      00500049004F000500120000004D0055004E00490043004900500049004F000C
+      00050000000E0014001500C80000000F00011600011000011700011100011200
+      011300120000004D0055004E00490043004900500049004F001800C8000000FE
+      FF0B0400220000004F005200470041004F00440045005300540049004E004100
+      54004100520049004F000500220000004F005200470041004F00440045005300
+      540049004E00410054004100520049004F000C00060000000E0014001500FA00
+      00000F00011600011000011700011100011200011300220000004F0052004700
+      41004F00440045005300540049004E00410054004100520049004F001800FA00
+      0000FEFF0B04001000000053004900540055004100430041004F000500100000
+      0053004900540055004100430041004F000C00070000000E0014001500C70000
+      000F000116000110000117000111000112000113001000000053004900540055
+      004100430041004F001800C7000000FEFF0B0400180000004400410054004100
+      52004500470049005300540052004F0005001800000044004100540041005200
+      4500470049005300540052004F000C00080000000E0019000F00011600011000
+      0117000111000112000113001800000044004100540041005200450047004900
+      5300540052004F00FEFF0B0400200000005000520041005A004F004100540045
+      004E00440049004D0045004E0054004F000500200000005000520041005A004F
+      004100540045004E00440049004D0045004E0054004F000C00090000000E0019
+      000F00011600011000011700011100011200011300200000005000520041005A
+      004F004100540045004E00440049004D0045004E0054004F00FEFF0B04001A00
+      000046004F004900500052004F00520052004F004700410044004F0005001A00
+      000046004F004900500052004F00520052004F004700410044004F000C000A00
+      00000E0014001500030000000F00011600011A00011000011700011100011200
+      0113001A00000046004F004900500052004F00520052004F004700410044004F
+      00180003000000FEFF0B04002000000046004F0049005200450045004E004300
+      41004D0049004E004800410044004F0005002000000046004F00490052004500
+      45004E00430041004D0049004E004800410044004F000C000B0000000E001400
+      1500030000000F00011600011000011700011100011200011300200000004600
+      4F0049005200450045004E00430041004D0049004E004800410044004F001800
+      03000000FEFF0B04001A00000046004F0052004D00410052004500530050004F
+      0053005400410005001A00000046004F0052004D00410052004500530050004F
+      005300540041000C000C0000000E0014001500C80000000F0001160001100001
+      17000111000112000113001A00000046004F0052004D00410052004500530050
+      004F005300540041001800C8000000FEFF0B0400220000004F00520049004700
+      45004D0053004F004C0049004300490054004100430041004F00050022000000
+      4F0052004900470045004D0053004F004C004900430049005400410043004100
+      4F000C000D0000000E0014001500320000000F00011600011000011700011100
+      011200011300220000004F0052004900470045004D0053004F004C0049004300
+      490054004100430041004F00180032000000FEFF0B04001A0000004900440053
+      004F004C00490043004900540041004E005400450005001A0000004900440053
+      004F004C00490043004900540041004E00540045000C000E0000000E000D000F
+      000116000110000117000111000112000113001A0000004900440053004F004C
+      00490043004900540041004E0054004500FEFF0B04001A000000410053005300
+      55004E0054004F00500045004400490044004F0005001A000000410053005300
+      55004E0054004F00500045004400490044004F000C000F0000000E0014001500
+      C80000000F000116000110000117000111000112000113001A00000041005300
+      530055004E0054004F00500045004400490044004F001800C8000000FEFF0B04
+      002000000053005500420041005300530055004E0054004F0050004500440049
+      0044004F0005002000000053005500420041005300530055004E0054004F0050
+      0045004400490044004F000C00100000000E0014001500C80000000F00011600
+      0110000117000111000112000113002000000053005500420041005300530055
+      004E0054004F00500045004400490044004F001800C8000000FEFF0B04001800
+      0000440041005400410052004500530050004F00530054004100050018000000
+      440041005400410052004500530050004F005300540041000C00110000000E00
+      19000F0001160001100001170001110001120001130018000000440041005400
+      410052004500530050004F00530054004100FEFF0B04000E0000004400450043
+      004900530041004F0005000E0000004400450043004900530041004F000C0012
+      0000000E0014001500640000000F000116000110000117000111000112000113
+      000E0000004400450043004900530041004F00180064000000FEFF0B04002800
+      00004500530050004500430049004600490043004100430041004F0044004500
+      43004900530041004F0005002800000045005300500045004300490046004900
+      43004100430041004F004400450043004900530041004F000C00130000000E00
+      14001500C80000000F0001160001100001170001110001120001130028000000
+      4500530050004500430049004600490043004100430041004F00440045004300
+      4900530041004F001800C8000000FEFEFF1BFEFF1CFEFF1DFEFEFEFF1EFEFF1F
+      FF20FEFEFE0E004D0061006E0061006700650072001E00550070006400610074
+      00650073005200650067006900730074007200790012005400610062006C0065
+      004C006900730074000A005400610062006C00650008004E0061006D00650014
+      0053006F0075007200630065004E0061006D0065000A00540061006200490044
+      00240045006E0066006F0072006300650043006F006E00730074007200610069
+      006E00740073001E004D0069006E0069006D0075006D00430061007000610063
+      00690074007900180043006800650063006B004E006F0074004E0075006C006C
+      00140043006F006C0075006D006E004C006900730074000C0043006F006C0075
+      006D006E00100053006F007500720063006500490044000E006400740049006E
+      0074003300320010004400610074006100540079007000650014005300650061
+      00720063006800610062006C0065000800420061007300650012004F0049006E
+      0055007000640061007400650010004F0049006E00570068006500720065001A
+      004F0072006900670069006E0043006F006C004E0061006D0065001800640074
+      0041006E007300690053007400720069006E0067000800530069007A00650012
+      0041006C006C006F0077004E0075006C006C0014004F0041006C006C006F0077
+      004E0075006C006C00140053006F007500720063006500530069007A0065000C
+      006400740044006100740065001000460069007800650064004C0065006E001C
+      0043006F006E00730074007200610069006E0074004C00690073007400100056
+      006900650077004C006900730074000E0052006F0077004C0069007300740018
+      00520065006C006100740069006F006E004C006900730074001C005500700064
+      0061007400650073004A006F00750072006E0061006C000E004300680061006E
+      00670065007300}
+    object FmPedidosIDPEDIDO: TIntegerField
+      FieldName = 'IDPEDIDO'
+      Required = True
+    end
+    object FmPedidosPROTOCOLOPEDIDO: TStringField
+      FieldName = 'PROTOCOLOPEDIDO'
+      Size = 17
+    end
+    object FmPedidosESFERA: TStringField
+      FieldName = 'ESFERA'
+      Size = 30
+    end
+    object FmPedidosUF: TStringField
+      FieldName = 'UF'
+      Size = 60
+    end
+    object FmPedidosMUNICIPIO: TStringField
+      FieldName = 'MUNICIPIO'
+      Size = 200
+    end
+    object FmPedidosORGAODESTINATARIO: TStringField
+      FieldName = 'ORGAODESTINATARIO'
+      Size = 250
+    end
+    object FmPedidosSITUACAO: TStringField
+      FieldName = 'SITUACAO'
+      Size = 199
+    end
+    object FmPedidosDATAREGISTRO: TDateField
+      FieldName = 'DATAREGISTRO'
+    end
+    object FmPedidosPRAZOATENDIMENTO: TDateField
+      FieldName = 'PRAZOATENDIMENTO'
+    end
+    object FmPedidosFOIPRORROGADO: TStringField
+      FieldName = 'FOIPRORROGADO'
+      FixedChar = True
+      Size = 3
+    end
+    object FmPedidosFOIREENCAMINHADO: TStringField
+      FieldName = 'FOIREENCAMINHADO'
+      Size = 3
+    end
+    object FmPedidosFORMARESPOSTA: TStringField
+      FieldName = 'FORMARESPOSTA'
+      Size = 200
+    end
+    object FmPedidosORIGEMSOLICITACAO: TStringField
+      FieldName = 'ORIGEMSOLICITACAO'
+      Size = 50
+    end
+    object FmPedidosIDSOLICITANTE: TIntegerField
+      FieldName = 'IDSOLICITANTE'
+    end
+    object FmPedidosASSUNTOPEDIDO: TStringField
+      FieldName = 'ASSUNTOPEDIDO'
+      Size = 200
+    end
+    object FmPedidosSUBASSUNTOPEDIDO: TStringField
+      FieldName = 'SUBASSUNTOPEDIDO'
+      Size = 200
+    end
+    object FmPedidosDATARESPOSTA: TDateField
+      FieldName = 'DATARESPOSTA'
+    end
+    object FmPedidosDECISAO: TStringField
+      FieldName = 'DECISAO'
+      Size = 100
+    end
+    object FmPedidosESPECIFICACAODECISAO: TStringField
+      FieldName = 'ESPECIFICACAODECISAO'
+      Size = 200
+    end
+  end
+  object FDCargoPedidos: TFDQuery
+    Active = True
+    Connection = Conn
+    FetchOptions.AssignedValues = [evMode, evItems]
+    FetchOptions.Mode = fmManual
+    FetchOptions.Items = [fiMeta]
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable]
+    UpdateOptions.UpdateChangedFields = False
+    UpdateOptions.LockWait = True
+    UpdateOptions.RefreshMode = rmManual
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.CheckReadOnly = False
+    UpdateOptions.CheckUpdatable = False
+    SQL.Strings = (
+      'select * from PEDIDO')
+    Left = 40
+    Top = 360
+    object FDCargoPedidosIDPEDIDO: TIntegerField
+      FieldName = 'IDPEDIDO'
+      Origin = 'IDPEDIDO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object FDCargoPedidosPROTOCOLOPEDIDO: TStringField
+      FieldName = 'PROTOCOLOPEDIDO'
+      Origin = 'PROTOCOLOPEDIDO'
+      Size = 17
+    end
+    object FDCargoPedidosESFERA: TStringField
+      FieldName = 'ESFERA'
+      Origin = 'ESFERA'
+      Size = 30
+    end
+    object FDCargoPedidosUF: TStringField
+      FieldName = 'UF'
+      Origin = 'UF'
+      Size = 60
+    end
+    object FDCargoPedidosMUNICIPIO: TStringField
+      FieldName = 'MUNICIPIO'
+      Origin = 'MUNICIPIO'
+      Size = 200
+    end
+    object FDCargoPedidosORGAODESTINATARIO: TStringField
+      FieldName = 'ORGAODESTINATARIO'
+      Origin = 'ORGAODESTINATARIO'
+      Size = 250
+    end
+    object FDCargoPedidosSITUACAO: TStringField
+      FieldName = 'SITUACAO'
+      Origin = 'SITUACAO'
+      Size = 199
+    end
+    object FDCargoPedidosDATAREGISTRO: TDateField
+      FieldName = 'DATAREGISTRO'
+      Origin = 'DATAREGISTRO'
+    end
+    object FDCargoPedidosPRAZOATENDIMENTO: TDateField
+      FieldName = 'PRAZOATENDIMENTO'
+      Origin = 'PRAZOATENDIMENTO'
+    end
+    object FDCargoPedidosFOIPRORROGADO: TStringField
+      FieldName = 'FOIPRORROGADO'
+      Origin = 'FOIPRORROGADO'
+      FixedChar = True
+      Size = 3
+    end
+    object FDCargoPedidosFOIREENCAMINHADO: TStringField
+      FieldName = 'FOIREENCAMINHADO'
+      Origin = 'FOIREENCAMINHADO'
+      Size = 3
+    end
+    object FDCargoPedidosFORMARESPOSTA: TStringField
+      FieldName = 'FORMARESPOSTA'
+      Origin = 'FORMARESPOSTA'
+      Size = 200
+    end
+    object FDCargoPedidosORIGEMSOLICITACAO: TStringField
+      FieldName = 'ORIGEMSOLICITACAO'
+      Origin = 'ORIGEMSOLICITACAO'
+      Size = 50
+    end
+    object FDCargoPedidosIDSOLICITANTE: TIntegerField
+      FieldName = 'IDSOLICITANTE'
+      Origin = 'IDSOLICITANTE'
+    end
+    object FDCargoPedidosASSUNTOPEDIDO: TStringField
+      FieldName = 'ASSUNTOPEDIDO'
+      Origin = 'ASSUNTOPEDIDO'
+      Size = 200
+    end
+    object FDCargoPedidosSUBASSUNTOPEDIDO: TStringField
+      FieldName = 'SUBASSUNTOPEDIDO'
+      Origin = 'SUBASSUNTOPEDIDO'
+      Size = 200
+    end
+    object FDCargoPedidosDATARESPOSTA: TDateField
+      FieldName = 'DATARESPOSTA'
+      Origin = 'DATARESPOSTA'
+    end
+    object FDCargoPedidosDECISAO: TStringField
+      FieldName = 'DECISAO'
+      Origin = 'DECISAO'
+      Size = 100
+    end
+    object FDCargoPedidosESPECIFICACAODECISAO: TStringField
+      FieldName = 'ESPECIFICACAODECISAO'
+      Origin = 'ESPECIFICACAODECISAO'
+      Size = 200
+    end
+  end
+  object FDBMovePedidos: TFDBatchMove
+    Reader = FDDataReaderPedidos
+    Writer = FDWritePedidos
+    Mode = dmAppendUpdate
+    Options = [poClearDestNoUndo, poIdentityInsert, poCreateDest, poSkipUnmatchedDestFields, poUseTransactions]
+    Mappings = <
+      item
+        SourceFieldName = 'IDPEDIDO'
+        DestinationFieldName = 'IDPEDIDO'
+      end
+      item
+        SourceFieldName = 'PROTOCOLOPEDIDO'
+        DestinationFieldName = 'PROTOCOLOPEDIDO'
+      end
+      item
+        SourceFieldName = 'ESFERA'
+        DestinationFieldName = 'ESFERA'
+      end
+      item
+        SourceFieldName = 'UF'
+        DestinationFieldName = 'UF'
+      end
+      item
+        SourceFieldName = 'MUNICIPIO'
+        DestinationFieldName = 'MUNICIPIO'
+      end
+      item
+        SourceFieldName = 'ORGAODESTINATARIO'
+        DestinationFieldName = 'ORGAODESTINATARIO'
+      end
+      item
+        SourceFieldName = 'SITUACAO'
+        DestinationFieldName = 'SITUACAO'
+      end
+      item
+        SourceFieldName = 'DATAREGISTRO'
+        DestinationFieldName = 'DATAREGISTRO'
+      end
+      item
+        SourceFieldName = 'PRAZOATENDIMENTO'
+        DestinationFieldName = 'PRAZOATENDIMENTO'
+      end
+      item
+        SourceFieldName = 'FOIPRORROGADO'
+        DestinationFieldName = 'FOIPRORROGADO'
+      end
+      item
+        SourceFieldName = 'FOIREENCAMINHADO'
+        DestinationFieldName = 'FOIREENCAMINHADO'
+      end
+      item
+        SourceFieldName = 'FORMARESPOSTA'
+        DestinationFieldName = 'FORMARESPOSTA'
+      end
+      item
+        SourceFieldName = 'ORIGEMSOLICITACAO'
+        DestinationFieldName = 'ORIGEMSOLICITACAO'
+      end
+      item
+        SourceFieldName = 'IDSOLICITANTE'
+        DestinationFieldName = 'IDSOLICITANTE'
+      end
+      item
+        SourceFieldName = 'ASSUNTOPEDIDO'
+        DestinationFieldName = 'ASSUNTOPEDIDO'
+      end
+      item
+        SourceFieldName = 'SUBASSUNTOPEDIDO'
+        DestinationFieldName = 'SUBASSUNTOPEDIDO'
+      end
+      item
+        SourceFieldName = 'DATARESPOSTA'
+        DestinationFieldName = 'DATARESPOSTA'
+      end
+      item
+        SourceFieldName = 'DECISAO'
+        DestinationFieldName = 'DECISAO'
+      end
+      item
+        SourceFieldName = 'ESPECIFICACAODECISAO'
+        DestinationFieldName = 'ESPECIFICACAODECISAO'
+      end>
+    LogFileName = 'Data.log'
+    Left = 40
+    Top = 112
+  end
+  object FDDataReaderPedidos: TFDBatchMoveDataSetReader
+    DataSet = FmPedidos
+    Left = 40
+    Top = 160
+  end
+  object FDWritePedidos: TFDBatchMoveDataSetWriter
+    DataSet = FDCargoPedidos
+    Left = 40
+    Top = 224
+  end
+  object FmRecursos: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'IDRECURSO'
+        Attributes = [faRequired]
+        DataType = ftInteger
+      end
+      item
+        Name = 'IDRECURSOPRECEDENTE'
+        DataType = ftInteger
+      end
+      item
+        Name = 'IDPEDIDO'
+        DataType = ftInteger
+      end
+      item
+        Name = 'IDSOLICITANTE'
+        DataType = ftInteger
+      end
+      item
+        Name = 'PROTOCOLOPEDIDO'
+        DataType = ftString
+        Size = 17
+      end
+      item
+        Name = 'ESFERA'
+        DataType = ftString
+        Size = 30
+      end
+      item
+        Name = 'UF'
+        DataType = ftString
+        Size = 60
+      end
+      item
+        Name = 'MUNICIPIO'
+        DataType = ftString
+        Size = 200
+      end
+      item
+        Name = 'ORGAODESTINATARIO'
+        DataType = ftString
+        Size = 250
+      end
+      item
+        Name = 'INSTANCIA'
+        DataType = ftString
+        Size = 80
+      end
+      item
+        Name = 'SITUACAO'
+        DataType = ftString
+        Size = 80
+      end
+      item
+        Name = 'DATAREGISTRO'
+        DataType = ftDate
+      end
+      item
+        Name = 'PRAZOATENDIMENTO'
+        DataType = ftDate
+      end
+      item
+        Name = 'ORIGEMSOLICITACAO'
+        DataType = ftString
+        Size = 50
+      end
+      item
+        Name = 'TIPORECURSO'
+        DataType = ftString
+        Size = 80
+      end
+      item
+        Name = 'DATARESPOSTA'
+        DataType = ftDate
+      end
+      item
+        Name = 'TIPORESPOSTA'
+        DataType = ftString
+        Size = 80
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    FormatOptions.AssignedValues = [fvMaxBcdPrecision, fvMaxBcdScale]
+    FormatOptions.MaxBcdPrecision = 2147483647
+    FormatOptions.MaxBcdScale = 1073741823
+    ResourceOptions.AssignedValues = [rvPersistent, rvSilentMode]
+    ResourceOptions.Persistent = True
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable, uvAutoCommitUpdates]
+    UpdateOptions.LockWait = True
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 224
+    Top = 16
+    Content = {
+      414442530F000000AE080000FF00010001FF02FF0304001400000046006D0052
+      00650063007500720073006F00730005000A0000005400610062006C00650006
+      0000000000070000080032000000090000FF0AFF0B0400120000004900440052
+      00450043005500520053004F0005001200000049004400520045004300550052
+      0053004F000C00010000000E000D000F00011000011100011200011300120000
+      00490044005200450043005500520053004F00FEFF0B04002600000049004400
+      5200450043005500520053004F0050005200450043004500440045004E005400
+      4500050026000000490044005200450043005500520053004F00500052004500
+      43004500440045004E00540045000C00020000000E000D000F00011400011000
+      0115000111000112000113002600000049004400520045004300550052005300
+      4F0050005200450043004500440045004E0054004500FEFF0B04001000000049
+      004400500045004400490044004F000500100000004900440050004500440049
+      0044004F000C00030000000E000D000F00011400011000011500011100011200
+      0113001000000049004400500045004400490044004F00FEFF0B04001A000000
+      4900440053004F004C00490043004900540041004E005400450005001A000000
+      4900440053004F004C00490043004900540041004E00540045000C0004000000
+      0E000D000F000114000110000115000111000112000113001A00000049004400
+      53004F004C00490043004900540041004E0054004500FEFF0B04001E00000050
+      0052004F0054004F0043004F004C004F00500045004400490044004F0005001E
+      000000500052004F0054004F0043004F004C004F00500045004400490044004F
+      000C00050000000E0016001700110000000F0001140001100001150001110001
+      12000113001E000000500052004F0054004F0043004F004C004F005000450044
+      00490044004F00180011000000FEFF0B04000C00000045005300460045005200
+      410005000C0000004500530046004500520041000C00060000000E0016001700
+      1E0000000F000114000110000115000111000112000113000C00000045005300
+      460045005200410018001E000000FEFF0B040004000000550046000500040000
+      00550046000C00070000000E00160017003C0000000F00011400011000011500
+      011100011200011300040000005500460018003C000000FEFF0B040012000000
+      4D0055004E00490043004900500049004F000500120000004D0055004E004900
+      43004900500049004F000C00080000000E0016001700C80000000F0001140001
+      1000011500011100011200011300120000004D0055004E004900430049005000
+      49004F001800C8000000FEFF0B0400220000004F005200470041004F00440045
+      005300540049004E00410054004100520049004F000500220000004F00520047
+      0041004F00440045005300540049004E00410054004100520049004F000C0009
+      0000000E0016001700FA0000000F000114000110000115000111000112000113
+      00220000004F005200470041004F00440045005300540049004E004100540041
+      00520049004F001800FA000000FEFF0B04001200000049004E00530054004100
+      4E0043004900410005001200000049004E005300540041004E00430049004100
+      0C000A0000000E0016001700500000000F000114000110000115000111000112
+      000113001200000049004E005300540041004E00430049004100180050000000
+      FEFF0B04001000000053004900540055004100430041004F0005001000000053
+      004900540055004100430041004F000C000B0000000E0016001700500000000F
+      0001140001100001150001110001120001130010000000530049005400550041
+      00430041004F00180050000000FEFF0B04001800000044004100540041005200
+      4500470049005300540052004F00050018000000440041005400410052004500
+      470049005300540052004F000C000C0000000E0019000F000114000110000115
+      0001110001120001130018000000440041005400410052004500470049005300
+      540052004F00FEFF0B0400200000005000520041005A004F004100540045004E
+      00440049004D0045004E0054004F000500200000005000520041005A004F0041
+      00540045004E00440049004D0045004E0054004F000C000D0000000E0019000F
+      00011400011000011500011100011200011300200000005000520041005A004F
+      004100540045004E00440049004D0045004E0054004F00FEFF0B040022000000
+      4F0052004900470045004D0053004F004C004900430049005400410043004100
+      4F000500220000004F0052004900470045004D0053004F004C00490043004900
+      54004100430041004F000C000E0000000E0016001700320000000F0001140001
+      1000011500011100011200011300220000004F0052004900470045004D005300
+      4F004C0049004300490054004100430041004F00180032000000FEFF0B040016
+      0000005400490050004F005200450043005500520053004F0005001600000054
+      00490050004F005200450043005500520053004F000C000F0000000E00160017
+      00500000000F0001140001100001150001110001120001130016000000540049
+      0050004F005200450043005500520053004F00180050000000FEFF0B04001800
+      0000440041005400410052004500530050004F00530054004100050018000000
+      440041005400410052004500530050004F005300540041000C00100000000E00
+      19000F0001140001100001150001110001120001130018000000440041005400
+      410052004500530050004F00530054004100FEFF0B0400180000005400490050
+      004F0052004500530050004F005300540041000500180000005400490050004F
+      0052004500530050004F005300540041000C00110000000E0016001700500000
+      000F00011400011000011500011100011200011300180000005400490050004F
+      0052004500530050004F00530054004100180050000000FEFEFF1AFEFF1BFEFF
+      1CFEFEFEFF1DFEFF1EFF1FFEFEFE0E004D0061006E0061006700650072001E00
+      5500700064006100740065007300520065006700690073007400720079001200
+      5400610062006C0065004C006900730074000A005400610062006C0065000800
+      4E0061006D006500140053006F0075007200630065004E0061006D0065000A00
+      54006100620049004400240045006E0066006F0072006300650043006F006E00
+      730074007200610069006E00740073001E004D0069006E0069006D0075006D00
+      43006100700061006300690074007900180043006800650063006B004E006F00
+      74004E0075006C006C00140043006F006C0075006D006E004C00690073007400
+      0C0043006F006C0075006D006E00100053006F00750072006300650049004400
+      0E006400740049006E0074003300320010004400610074006100540079007000
+      65001400530065006100720063006800610062006C0065000800420061007300
+      650012004F0049006E0055007000640061007400650010004F0049006E005700
+      68006500720065001A004F0072006900670069006E0043006F006C004E006100
+      6D006500120041006C006C006F0077004E0075006C006C0014004F0041006C00
+      6C006F0077004E0075006C006C0018006400740041006E007300690053007400
+      720069006E0067000800530069007A006500140053006F007500720063006500
+      530069007A0065000C006400740044006100740065001C0043006F006E007300
+      74007200610069006E0074004C00690073007400100056006900650077004C00
+      6900730074000E0052006F0077004C006900730074001800520065006C006100
+      740069006F006E004C006900730074001C005500700064006100740065007300
+      4A006F00750072006E0061006C000E004300680061006E00670065007300}
+    object FmRecursosIDRECURSO: TIntegerField
+      FieldName = 'IDRECURSO'
+      Required = True
+    end
+    object FmRecursosIDRECURSOPRECEDENTE: TIntegerField
+      FieldName = 'IDRECURSOPRECEDENTE'
+    end
+    object FmRecursosIDPEDIDO: TIntegerField
+      FieldName = 'IDPEDIDO'
+    end
+    object FmRecursosIDSOLICITANTE: TIntegerField
+      FieldName = 'IDSOLICITANTE'
+    end
+    object FmRecursosPROTOCOLOPEDIDO: TStringField
+      FieldName = 'PROTOCOLOPEDIDO'
+      Size = 17
+    end
+    object FmRecursosESFERA: TStringField
+      FieldName = 'ESFERA'
+      Size = 30
+    end
+    object FmRecursosUF: TStringField
+      FieldName = 'UF'
+      Size = 60
+    end
+    object FmRecursosMUNICIPIO: TStringField
+      FieldName = 'MUNICIPIO'
+      Size = 200
+    end
+    object FmRecursosORGAODESTINATARIO: TStringField
+      FieldName = 'ORGAODESTINATARIO'
+      Size = 250
+    end
+    object FmRecursosINSTANCIA: TStringField
+      FieldName = 'INSTANCIA'
+      Size = 80
+    end
+    object FmRecursosSITUACAO: TStringField
+      FieldName = 'SITUACAO'
+      Size = 80
+    end
+    object FmRecursosDATAREGISTRO: TDateField
+      FieldName = 'DATAREGISTRO'
+    end
+    object FmRecursosPRAZOATENDIMENTO: TDateField
+      FieldName = 'PRAZOATENDIMENTO'
+    end
+    object FmRecursosORIGEMSOLICITACAO: TStringField
+      FieldName = 'ORIGEMSOLICITACAO'
+      Size = 50
+    end
+    object FmRecursosTIPORECURSO: TStringField
+      FieldName = 'TIPORECURSO'
+      Size = 80
+    end
+    object FmRecursosDATARESPOSTA: TDateField
+      FieldName = 'DATARESPOSTA'
+    end
+    object FmRecursosTIPORESPOSTA: TStringField
+      FieldName = 'TIPORESPOSTA'
+      Size = 80
+    end
+  end
+  object FQRecursos: TFDQuery
+    Active = True
+    Connection = Conn
+    FetchOptions.AssignedValues = [evMode, evItems]
+    FetchOptions.Mode = fmManual
+    FetchOptions.Items = [fiMeta]
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable]
+    UpdateOptions.UpdateChangedFields = False
+    UpdateOptions.LockWait = True
+    UpdateOptions.RefreshMode = rmManual
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.CheckReadOnly = False
+    UpdateOptions.CheckUpdatable = False
+    SQL.Strings = (
+      'select * from recurso')
+    Left = 224
+    Top = 64
+    object FQRecursosIDRECURSO: TIntegerField
+      FieldName = 'IDRECURSO'
+      Origin = 'IDRECURSO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object FQRecursosIDRECURSOPRECEDENTE: TIntegerField
+      FieldName = 'IDRECURSOPRECEDENTE'
+      Origin = 'IDRECURSOPRECEDENTE'
+    end
+    object FQRecursosIDPEDIDO: TIntegerField
+      FieldName = 'IDPEDIDO'
+      Origin = 'IDPEDIDO'
+    end
+    object FQRecursosIDSOLICITANTE: TIntegerField
+      FieldName = 'IDSOLICITANTE'
+      Origin = 'IDSOLICITANTE'
+    end
+    object FQRecursosPROTOCOLOPEDIDO: TStringField
+      FieldName = 'PROTOCOLOPEDIDO'
+      Origin = 'PROTOCOLOPEDIDO'
+      Size = 17
+    end
+    object FQRecursosESFERA: TStringField
+      FieldName = 'ESFERA'
+      Origin = 'ESFERA'
+      Size = 30
+    end
+    object FQRecursosUF: TStringField
+      FieldName = 'UF'
+      Origin = 'UF'
+      Size = 60
+    end
+    object FQRecursosMUNICIPIO: TStringField
+      FieldName = 'MUNICIPIO'
+      Origin = 'MUNICIPIO'
+      Size = 200
+    end
+    object FQRecursosORGAODESTINATARIO: TStringField
+      FieldName = 'ORGAODESTINATARIO'
+      Origin = 'ORGAODESTINATARIO'
+      Size = 250
+    end
+    object FQRecursosINSTANCIA: TStringField
+      FieldName = 'INSTANCIA'
+      Origin = 'INSTANCIA'
+      Size = 80
+    end
+    object FQRecursosSITUACAO: TStringField
+      FieldName = 'SITUACAO'
+      Origin = 'SITUACAO'
+      Size = 80
+    end
+    object FQRecursosDATAREGISTRO: TDateField
+      FieldName = 'DATAREGISTRO'
+      Origin = 'DATAREGISTRO'
+    end
+    object FQRecursosPRAZOATENDIMENTO: TDateField
+      FieldName = 'PRAZOATENDIMENTO'
+      Origin = 'PRAZOATENDIMENTO'
+    end
+    object FQRecursosORIGEMSOLICITACAO: TStringField
+      FieldName = 'ORIGEMSOLICITACAO'
+      Origin = 'ORIGEMSOLICITACAO'
+      Size = 50
+    end
+    object FQRecursosTIPORECURSO: TStringField
+      FieldName = 'TIPORECURSO'
+      Origin = 'TIPORECURSO'
+      Size = 80
+    end
+    object FQRecursosDATARESPOSTA: TDateField
+      FieldName = 'DATARESPOSTA'
+      Origin = 'DATARESPOSTA'
+    end
+    object FQRecursosTIPORESPOSTA: TStringField
+      FieldName = 'TIPORESPOSTA'
+      Origin = 'TIPORESPOSTA'
+      Size = 80
+    end
+  end
+  object FbmRecursos: TFDBatchMove
+    Mode = dmAppendUpdate
+    Mappings = <
+      item
+        SourceFieldName = 'IDRECURSO'
+        DestinationFieldName = 'IDRECURSO'
+      end
+      item
+        SourceFieldName = 'IDRECURSOPRECEDENTE'
+        DestinationFieldName = 'IDRECURSOPRECEDENTE'
+      end
+      item
+        SourceFieldName = 'IDPEDIDO'
+        DestinationFieldName = 'IDPEDIDO'
+      end
+      item
+        SourceFieldName = 'IDSOLICITANTE'
+        DestinationFieldName = 'IDSOLICITANTE'
+      end
+      item
+        SourceFieldName = 'PROTOCOLOPEDIDO'
+        DestinationFieldName = 'PROTOCOLOPEDIDO'
+      end
+      item
+        SourceFieldName = 'ESFERA'
+        DestinationFieldName = 'ESFERA'
+      end
+      item
+        SourceFieldName = 'UF'
+        DestinationFieldName = 'UF'
+      end
+      item
+        SourceFieldName = 'MUNICIPIO'
+        DestinationFieldName = 'MUNICIPIO'
+      end
+      item
+        SourceFieldName = 'ORGAODESTINATARIO'
+        DestinationFieldName = 'ORGAODESTINATARIO'
+      end
+      item
+        SourceFieldName = 'INSTANCIA'
+        DestinationFieldName = 'INSTANCIA'
+      end
+      item
+        SourceFieldName = 'SITUACAO'
+        DestinationFieldName = 'SITUACAO'
+      end
+      item
+        SourceFieldName = 'DATAREGISTRO'
+        DestinationFieldName = 'DATAREGISTRO'
+      end
+      item
+        SourceFieldName = 'PRAZOATENDIMENTO'
+        DestinationFieldName = 'PRAZOATENDIMENTO'
+      end
+      item
+        SourceFieldName = 'ORIGEMSOLICITACAO'
+        DestinationFieldName = 'ORIGEMSOLICITACAO'
+      end
+      item
+        SourceFieldName = 'TIPORECURSO'
+        DestinationFieldName = 'TIPORECURSO'
+      end
+      item
+        SourceFieldName = 'DATARESPOSTA'
+        DestinationFieldName = 'DATARESPOSTA'
+      end
+      item
+        SourceFieldName = 'TIPORESPOSTA'
+        DestinationFieldName = 'TIPORESPOSTA'
+      end>
+    LogFileName = 'Data.log'
+    Left = 224
+    Top = 120
+  end
+  object FDRRecursos: TFDBatchMoveDataSetReader
+    DataSet = FmRecursos
+    Left = 224
+    Top = 176
+  end
+  object FDWRecursos: TFDBatchMoveDataSetWriter
+    DataSet = FQRecursos
+    Left = 224
+    Top = 224
+  end
+  object FbmSolicitante: TFDBatchMove
+    Reader = FDRSolicitante
+    Writer = FdwSolicitante
+    Mode = dmAppendUpdate
+    Mappings = <
+      item
+        SourceFieldName = 'IDSOLICITANTE'
+        DestinationFieldName = 'IDSOLICITANTE'
+      end
+      item
+        SourceFieldName = 'TIPODEMANDANTE'
+        DestinationFieldName = 'TIPODEMANDANTE'
+      end
+      item
+        SourceFieldName = 'DATANASCIMENTO'
+        DestinationFieldName = 'DATANASCIMENTO'
+      end
+      item
+        SourceFieldName = 'GENERO'
+        DestinationFieldName = 'GENERO'
+      end
+      item
+        SourceFieldName = 'ESCOLARIDADE'
+        DestinationFieldName = 'ESCOLARIDADE'
+      end
+      item
+        SourceFieldName = 'PROFISSAO'
+        DestinationFieldName = 'PROFISSAO'
+      end
+      item
+        SourceFieldName = 'TIPOPESSOAJURIDICA'
+        DestinationFieldName = 'TIPOPESSOAJURIDICA'
+      end
+      item
+        SourceFieldName = 'PAIS'
+        DestinationFieldName = 'PAIS'
+      end
+      item
+        SourceFieldName = 'UF'
+        DestinationFieldName = 'UF'
+      end
+      item
+        SourceFieldName = 'MUNICIPIO'
+        DestinationFieldName = 'MUNICIPIO'
+      end>
+    LogFileName = 'Data.log'
+    Left = 472
+    Top = 144
+  end
+  object FmSolicitante: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'IDSOLICITANTE'
+        Attributes = [faRequired]
+        DataType = ftInteger
+      end
+      item
+        Name = 'TIPODEMANDANTE'
+        DataType = ftString
+        Size = 15
+      end
+      item
+        Name = 'DATANASCIMENTO'
+        DataType = ftDate
+      end
+      item
+        Name = 'GENERO'
+        DataType = ftString
+        Size = 13
+      end
+      item
+        Name = 'ESCOLARIDADE'
+        DataType = ftString
+        Size = 200
+      end
+      item
+        Name = 'PROFISSAO'
+        DataType = ftString
+        Size = 200
+      end
+      item
+        Name = 'TIPOPESSOAJURIDICA'
+        DataType = ftString
+        Size = 200
+      end
+      item
+        Name = 'PAIS'
+        DataType = ftString
+        Size = 200
+      end
+      item
+        Name = 'UF'
+        DataType = ftString
+        Size = 60
+      end
+      item
+        Name = 'MUNICIPIO'
+        DataType = ftString
+        Size = 200
+      end>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    FormatOptions.AssignedValues = [fvMaxBcdPrecision, fvMaxBcdScale]
+    FormatOptions.MaxBcdPrecision = 2147483647
+    FormatOptions.MaxBcdScale = 1073741823
+    ResourceOptions.AssignedValues = [rvPersistent, rvSilentMode]
+    ResourceOptions.Persistent = True
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable, uvAutoCommitUpdates]
+    UpdateOptions.LockWait = True
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 472
+    Top = 24
+    Content = {
+      414442530F00000011050000FF00010001FF02FF0304001A00000046006D0053
+      006F006C00690063006900740061006E007400650005000A0000005400610062
+      006C006500060000000000070000080032000000090000FF0AFF0B04001A0000
+      004900440053004F004C00490043004900540041004E005400450005001A0000
+      004900440053004F004C00490043004900540041004E00540045000C00010000
+      000E000D000F000110000111000112000113001A0000004900440053004F004C
+      00490043004900540041004E0054004500FEFF0B04001C000000540049005000
+      4F00440045004D0041004E00440041004E005400450005001C00000054004900
+      50004F00440045004D0041004E00440041004E00540045000C00020000000E00
+      140015000F0000000F000116000110000117000111000112000113001C000000
+      5400490050004F00440045004D0041004E00440041004E005400450018000F00
+      0000FEFF0B04001C00000044004100540041004E0041005300430049004D0045
+      004E0054004F0005001C00000044004100540041004E0041005300430049004D
+      0045004E0054004F000C00030000000E0019000F000116000110000117000111
+      000112000113001C00000044004100540041004E0041005300430049004D0045
+      004E0054004F00FEFF0B04000C000000470045004E00450052004F0005000C00
+      0000470045004E00450052004F000C00040000000E00140015000D0000000F00
+      0116000110000117000111000112000113000C000000470045004E0045005200
+      4F0018000D000000FEFF0B0400180000004500530043004F004C004100520049
+      0044004100440045000500180000004500530043004F004C0041005200490044
+      004100440045000C00050000000E0014001500C80000000F0001160001100001
+      1700011100011200011300180000004500530043004F004C0041005200490044
+      004100440045001800C8000000FEFF0B040012000000500052004F0046004900
+      5300530041004F00050012000000500052004F00460049005300530041004F00
+      0C00060000000E0014001500C80000000F000116000110000117000111000112
+      0001130012000000500052004F00460049005300530041004F001800C8000000
+      FEFF0B0400240000005400490050004F0050004500530053004F0041004A0055
+      005200490044004900430041000500240000005400490050004F005000450053
+      0053004F0041004A0055005200490044004900430041000C00070000000E0014
+      001500C80000000F000116000110000117000111000112000113002400000054
+      00490050004F0050004500530053004F0041004A005500520049004400490043
+      0041001800C8000000FEFF0B0400080000005000410049005300050008000000
+      50004100490053000C00080000000E0014001500C80000000F00011600011000
+      0117000111000112000113000800000050004100490053001800C8000000FEFF
+      0B04000400000055004600050004000000550046000C00090000000E00140015
+      003C0000000F0001160001100001170001110001120001130004000000550046
+      0018003C000000FEFF0B0400120000004D0055004E0049004300490050004900
+      4F000500120000004D0055004E00490043004900500049004F000C000A000000
+      0E0014001500C80000000F000116000110000117000111000112000113001200
+      00004D0055004E00490043004900500049004F001800C8000000FEFEFF1AFEFF
+      1BFEFF1CFEFEFEFF1DFEFF1EFF1FFEFEFE0E004D0061006E0061006700650072
+      001E005500700064006100740065007300520065006700690073007400720079
+      0012005400610062006C0065004C006900730074000A005400610062006C0065
+      0008004E0061006D006500140053006F0075007200630065004E0061006D0065
+      000A0054006100620049004400240045006E0066006F0072006300650043006F
+      006E00730074007200610069006E00740073001E004D0069006E0069006D0075
+      006D0043006100700061006300690074007900180043006800650063006B004E
+      006F0074004E0075006C006C00140043006F006C0075006D006E004C00690073
+      0074000C0043006F006C0075006D006E00100053006F00750072006300650049
+      0044000E006400740049006E0074003300320010004400610074006100540079
+      00700065001400530065006100720063006800610062006C0065000800420061
+      007300650012004F0049006E0055007000640061007400650010004F0049006E
+      00570068006500720065001A004F0072006900670069006E0043006F006C004E
+      0061006D00650018006400740041006E007300690053007400720069006E0067
+      000800530069007A006500120041006C006C006F0077004E0075006C006C0014
+      004F0041006C006C006F0077004E0075006C006C00140053006F007500720063
+      006500530069007A0065000C006400740044006100740065001C0043006F006E
+      00730074007200610069006E0074004C00690073007400100056006900650077
+      004C006900730074000E0052006F0077004C006900730074001800520065006C
+      006100740069006F006E004C006900730074001C005500700064006100740065
+      0073004A006F00750072006E0061006C000E004300680061006E006700650073
+      00}
+    object FmSolicitanteIDSOLICITANTE: TIntegerField
+      FieldName = 'IDSOLICITANTE'
+      Required = True
+    end
+    object FmSolicitanteTIPODEMANDANTE: TStringField
+      FieldName = 'TIPODEMANDANTE'
+      Size = 15
+    end
+    object FmSolicitanteDATANASCIMENTO: TDateField
+      FieldName = 'DATANASCIMENTO'
+    end
+    object FmSolicitanteGENERO: TStringField
+      FieldName = 'GENERO'
+      Size = 13
+    end
+    object FmSolicitanteESCOLARIDADE: TStringField
+      FieldName = 'ESCOLARIDADE'
+      Size = 200
+    end
+    object FmSolicitantePROFISSAO: TStringField
+      FieldName = 'PROFISSAO'
+      Size = 200
+    end
+    object FmSolicitanteTIPOPESSOAJURIDICA: TStringField
+      FieldName = 'TIPOPESSOAJURIDICA'
+      Size = 200
+    end
+    object FmSolicitantePAIS: TStringField
+      FieldName = 'PAIS'
+      Size = 200
+    end
+    object FmSolicitanteUF: TStringField
+      FieldName = 'UF'
+      Size = 60
+    end
+    object FmSolicitanteMUNICIPIO: TStringField
+      FieldName = 'MUNICIPIO'
+      Size = 200
+    end
+  end
+  object FQSolicitante: TFDQuery
+    Active = True
+    Connection = Conn
+    SQL.Strings = (
+      'select * from solicitante')
+    Left = 472
+    Top = 88
+    object FQSolicitanteIDSOLICITANTE: TIntegerField
+      FieldName = 'IDSOLICITANTE'
+      Origin = 'IDSOLICITANTE'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object FQSolicitanteTIPODEMANDANTE: TStringField
+      FieldName = 'TIPODEMANDANTE'
+      Origin = 'TIPODEMANDANTE'
+      Size = 15
+    end
+    object FQSolicitanteDATANASCIMENTO: TDateField
+      FieldName = 'DATANASCIMENTO'
+      Origin = 'DATANASCIMENTO'
+    end
+    object FQSolicitanteGENERO: TStringField
+      FieldName = 'GENERO'
+      Origin = 'GENERO'
+      Size = 13
+    end
+    object FQSolicitanteESCOLARIDADE: TStringField
+      FieldName = 'ESCOLARIDADE'
+      Origin = 'ESCOLARIDADE'
+      Size = 200
+    end
+    object FQSolicitantePROFISSAO: TStringField
+      FieldName = 'PROFISSAO'
+      Origin = 'PROFISSAO'
+      Size = 200
+    end
+    object FQSolicitanteTIPOPESSOAJURIDICA: TStringField
+      FieldName = 'TIPOPESSOAJURIDICA'
+      Origin = 'TIPOPESSOAJURIDICA'
+      Size = 200
+    end
+    object FQSolicitantePAIS: TStringField
+      FieldName = 'PAIS'
+      Origin = 'PAIS'
+      Size = 200
+    end
+    object FQSolicitanteUF: TStringField
+      FieldName = 'UF'
+      Origin = 'UF'
+      Size = 60
+    end
+    object FQSolicitanteMUNICIPIO: TStringField
+      FieldName = 'MUNICIPIO'
+      Origin = 'MUNICIPIO'
+      Size = 200
+    end
+  end
+  object FDRSolicitante: TFDBatchMoveDataSetReader
+    DataSet = FmSolicitante
+    Left = 472
+    Top = 200
+  end
+  object FdwSolicitante: TFDBatchMoveDataSetWriter
+    DataSet = FQSolicitante
+    Left = 472
+    Top = 256
+  end
+end

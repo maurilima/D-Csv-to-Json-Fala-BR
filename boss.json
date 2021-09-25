@@ -1,0 +1,11 @@
+{
+	"name": "Convert XML Testes",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./",
+	"projects": [],
+	"dependencies": {
+		"github.com/viniciussanchez/dataset-serialize": "^v2.3.3"
+	}
+}
