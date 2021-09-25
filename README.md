@@ -25,8 +25,8 @@ Converter Download de Dados LAI Csv para JSON e/ou Envaiar para BD
 
 
 - Obs. Os arquivos CSV fornecidos pelo download no site, não vem com uma linha de cabeçalho, por isso foram usados arrays para definir os mesmos assim como foi usado tambem para definir os tipos de dados para gerar o JSON corretamente.
-- Voce pode usar o aplicativo apaenas para gerar arquivos JSON do dados Baixados
-- Ele converte os 3 tipos de Arquivos disponilibizaods na site abaixo(link abaixo), Pedido, Recurso e Solicitante.
+- Voce pode usar o aplicativo apenas para gerar arquivos JSON dos dados Baixados
+- Ele converte os 3 tipos de Arquivos disponivies no site, abaixo link do mesmo, Pedido, Recurso e Solicitante.
 - https://falabr.cgu.gov.br/publico/DownloadDados/DownloadDadosLai.aspx 
 - 
 - 1 = Inteiro/Numerico, 2 = String, 3 = Date
@@ -40,7 +40,7 @@ Converter Download de Dados LAI Csv para JSON e/ou Envaiar para BD
 
 ### Duvida Sugestões ... entre em contato. QUalquer melhoramento será bme Vindo
 
-Divirta-se e aproveite
+# Divirta-se e aproveite
 
 
 
