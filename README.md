@@ -16,3 +16,7 @@ Converter Download de Dados LAI Csv para JSON e/ou Envaiar para BD
   
 ### Converte JSON para DATSet
 #### https://github.com/viniciussanchez/dataset-serialize/
+
+
+
+- Obs. Os arquivos CSV fornecidos pelo download no site, não vem cum uma linha de cabeçahp, por isso foram usados arrays para definir os mesmos assim como foi usado tambem para definir os typos de dados para gerar o JSON corretamente
