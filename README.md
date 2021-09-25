@@ -6,4 +6,7 @@ Converter Download de Dados LAI Csv para JSON e/ou Envaiar para BD
 
 ## Boss como gereniador de Pacotes
 
-## https://github.com/viniciussanchez/dataset-serialize/issues
+## Firebird 3.0
+
+## Converte JSON para DATSet
+### https://github.com/viniciussanchez/dataset-serialize/
