@@ -4,9 +4,11 @@ Converter Download de Dados LAI Csv para JSON e/ou Envaiar para BD
 
 ## Delphi 10.4 Community Edidtion
 
-## Boss como gereniador de Pacotes
 
 ## Firebird 3.0
 
-## Converte JSON para DATSet
-### https://github.com/viniciussanchez/dataset-serialize/
+## Boss como gereniador de Pacotes
+   - Apos Clone executar Boss Instal. Caos nao Queira usr o Boss voce pode clonar e adicionar no path do Delphi. Mais instrucoes no GitHub Boss e DataSet Serialize
+
+### Converte JSON para DATSet
+#### https://github.com/viniciussanchez/dataset-serialize/
