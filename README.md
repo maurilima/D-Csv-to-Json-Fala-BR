@@ -29,6 +29,6 @@ Converter Download de Dados LAI Csv para JSON e/ou Envaiar para BD
 - Foi usado um filtro na leitura do arquivo CSV baixado, localizando "Estadual" e "Roraima" para separa apenas para meu estado. Altere para atender as suas necessidades
 
 
-# Foi enviado junto com os fontes uma versao compilada para aqueles que nao tenham ou nao queiram baixar e intalar o Delphi Comunnity.
+#### Foi enviado junto com os fontes uma versao compilada para aqueles que nao tenham ou nao queiram baixar e intalar o Delphi Comunnity.
 
 
