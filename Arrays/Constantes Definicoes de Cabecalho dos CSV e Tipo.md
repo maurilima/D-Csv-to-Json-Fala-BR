@@ -3,7 +3,9 @@
 ## Pedidos
    - --------------------------------------------------------------------------------------------------------
 
-   aFieldsPedido : array [1..19] of string =  ('IDPEDIDO',
+
+
+    aFieldsPedido : array [1..19] of string =  ('IDPEDIDO',
                                                     'PROTOCOLOPEDIDO',
                                                     'ESFERA',
                                                     'UF',
@@ -22,7 +24,7 @@
                                                     'DATARESPOSTA',
                                                     'DECISAO',
                                                     'ESPECIFICACAODECISAO');
-  aTypesPedido  : array [1..19] of integer = ( 1,
+    aTypesPedido  : array [1..19] of integer = ( 1,
                                                      2,
                                                      2,
                                                      2,
@@ -43,8 +45,9 @@
                                                      2 );
 
 ## Recursos 
-        - -----------------------------------------------------------------------------------------------
-   aFieldsRecurso : array [1..17] of string =  ( 'IDRECURSO' ,
+- -----------------------------------------------------------------------------------------------
+ 
+    aFieldsRecurso : array [1..17] of string =  ( 'IDRECURSO' ,
                                                       'IDRECURSOPRECEDENTE',
                                                       'IDPEDIDO',
                                                       'IDSOLICITANTE',
@@ -61,7 +64,7 @@
                                                       'TIPORECURSO',
                                                       'DATARESPOSTA',
                                                       'TIPORESPOSTA' );
-  aTypesRecurso : array [1..17] of integer = ( 1,
+    aTypesRecurso : array [1..17] of integer = ( 1,
                                                      1,
                                                      1,
                                                      1,
@@ -81,8 +84,10 @@
 
 
 ## Solicitantes
+   
    - ------------------------------------------------------------------------------------------------ 
-   aFieldsSolicitante : array [1..10] of string = ( 'IDSOLICITANTE',
+   
+    aFieldsSolicitante : array [1..10] of string = ( 'IDSOLICITANTE',
                                                           'TIPODEMANDANTE',
                                                           'DATANASCIMENTO',
                                                           'GENERO',
@@ -92,7 +97,7 @@
                                                           'PAIS',
                                                           'UF',
                                                           'MUNICIPIO');
-  aTypesSolicitante : array [1..10] of integer = ( 1,
+    aTypesSolicitante : array [1..10] of integer = ( 1,
                                                          2,
                                                          3,
                                                          2,
@@ -105,3 +110,5 @@
 
 
 
+
+- ---------------------------------------------------------------------------------------------
