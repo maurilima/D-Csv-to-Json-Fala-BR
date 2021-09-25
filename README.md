@@ -3,8 +3,9 @@ Converter Download de Dados LAI Csv para JSON e/ou Envaiar para BD
 
 
 ### Delphi 10.4 Community Edidtion
-    - Usado o Firedac ETL com batchMove para Gravar no Banco de Dados
-    
+   - Usado o Firedac ETL com batchMove para Gravar no Banco de Dados
+   
+#### Foi enviado junto com os fontes uma versao compilada (.exe) para quem nao precisar ou nao queiram baixar e instalar o Delphi Comunnity.
 
 
 
@@ -30,12 +31,11 @@ Converter Download de Dados LAI Csv para JSON e/ou Envaiar para BD
 - https://falabr.cgu.gov.br/publico/DownloadDados/DownloadDadosLai.aspx 
 - 
 - 1 = Inteiro/Numerico, 2 = String, 3 = Date
-- Na Pasta Arrays estao disponivveis o arrays usados. Pode ser usado para converter qualquer  que nao disponha de "Cabeçaljo" padrao na linha 1 arquivo CSV em Json
+- Na Pasta Arrays estao disponivveis o arrays usados. Pode ser usado para converter qualquer  que nao disponha de "Cabeçalho" padrao na linha 1 arquivo CSV em Json
 - O Tipo date no firebird Deve ser usado no padrao aaaa-mm-dd devido ao firedac-ETL
 - Foi usado um filtro na leitura do arquivo CSV baixado, localizando "Estadual" e "Roraima" para separa apenas para meu estado. Altere para atender as suas necessidades
 
 
-#### Foi enviado junto com os fontes uma versao compilada (.exe) para quem nao precisar ou nao queiram baixar e instalar o Delphi Comunnity.
 
 
 ### Duvida Sugestões ... entre em contato. Qualquer melhora nos codigos será bem Vinda
