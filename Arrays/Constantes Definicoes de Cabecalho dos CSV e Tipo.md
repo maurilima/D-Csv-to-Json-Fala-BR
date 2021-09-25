@@ -1,4 +1,7 @@
-Constantes Definicoes de Cabecalho dos CSV e Tipo
+# Constantes Definicoes de Cabecalho dos CSV e Tipo
+ 
+        ## Pedidos
+        - --------------------------------------------------------------------------------------------------------
 
 
         aFieldsPedido : array [1..19] of string =  ('IDPEDIDO',
@@ -39,6 +42,9 @@ Constantes Definicoes de Cabecalho dos CSV e Tipo
                                                      3,
                                                      2,
                                                      2 );
+
+        ## Recursos 
+        - -----------------------------------------------------------------------------------------------
         aFieldsRecurso : array [1..17] of string =  ( 'IDRECURSO' ,
                                                       'IDRECURSOPRECEDENTE',
                                                       'IDPEDIDO',
@@ -74,6 +80,9 @@ Constantes Definicoes de Cabecalho dos CSV e Tipo
                                                      3,
                                                      2 );
 
+
+        ## Solicitantes
+        - ------------------------------------------------------------------------------------------------ 
         aFieldsSolicitante : array [1..10] of string = ( 'IDSOLICITANTE',
                                                           'TIPODEMANDANTE',
                                                           'DATANASCIMENTO',
@@ -94,5 +103,6 @@ Constantes Definicoes de Cabecalho dos CSV e Tipo
                                                          2,
                                                          2,
                                                          2  );
+
 
 
