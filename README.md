@@ -38,7 +38,7 @@ Converter Download de Dados LAI Csv para JSON e/ou Envaiar para BD
 #### Foi enviado junto com os fontes uma versao compilada (.exe) para quem nao precisar ou nao queiram baixar e instalar o Delphi Comunnity.
 
 
-### Duvida Sugestões ... entre em contato. QUalquer melhoramento será bme Vindo
+### Duvida Sugestões ... entre em contato. Qualquer melhora nos codigos será bem Vinda
 
 # Divirta-se e aproveite
 
