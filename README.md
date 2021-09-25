@@ -11,7 +11,8 @@ Converter Download de Dados LAI Csv para JSON e/ou Envaiar para BD
   - para instalar boos
     https://github.com/HashLoad/boss
    
-  - Após Clonar executar Boss Install. Caos nao Queira usr o Boss voce pode clonar e adicionar no path do Delphi. Mais instrucoes no GitHub Boss e DataSet Serialize
-
+  - pós Clonar executar Boss Install. Caso não Queira usar o Boss você pode clonar  manualmente com o git clone e adicionar no path do Delphi. Mais instrucoes no GitHub Boss
+  - e no git do DataSet Serialize
+  
 ### Converte JSON para DATSet
 #### https://github.com/viniciussanchez/dataset-serialize/
