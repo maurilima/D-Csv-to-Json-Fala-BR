@@ -20,11 +20,15 @@ Converter Download de Dados LAI Csv para JSON e/ou Envaiar para BD
   - pós Clonar executar Boss Install. Caso não Queira usar o Boss você pode clonar  manualmente com o git clone e adicionar no path do Delphi. Mais instrucoes no GitHub Boss
   - e no git do DataSet Serialize
   
+## DataSet Serialize for Delphi and Lazarus (FPC)
+
 ### Converte JSON para DATASET e DATASET para JSON
+
 #### https://github.com/viniciussanchez/dataset-serialize/
 
 DataSet Serialize is a set of features to make working with JSON and DataSet simple. It has features such as exporting or importing records into a DataSet, validate if JSON has all required attributes (previously entered in the DataSet), exporting or importing the structure of DataSet fields in JSON format. In addition to managing nested JSON through master detail or using TDataSetField (you choose the way that suits you best). All this using class helpers, which makes it even simpler and easier to use.
 
+- ---------------------------------------------------------------------------------------------------------
 
 #Notas
 
