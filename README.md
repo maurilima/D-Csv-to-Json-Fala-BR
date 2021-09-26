@@ -10,7 +10,7 @@ Converter Arquivos do Fala-Br  CSV para JSON, disponibilizados no site da CGU,  
 ### Delphi 10.4 Community Edidtion
    - Usado o Firedac ETL com batchMove para Gravar no Banco de Dados
    
-#### - Foi enviado junto com os fontes uma versao compilada (.exe) para quem nao precisar ou nao queiram baixar e instalar o Delphi Comunnity. Encotra-se na past Bin.
+#### - Foi enviado junto com os fontes uma versao compilada (.exe) para quem nao precisar ou nao queiram baixar e instalar o Delphi Comunnity. Encontra-se na pasta Bin.
 
 #### - Devido a Grande velocidade de Leitura e conversão dos arquivos, nao vi a necessidade de usar Multhreading.
 
