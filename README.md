@@ -23,9 +23,12 @@ Converter Download de Dados LAI Csv para JSON e/ou Envaiar para BD
 ### Converte JSON para DATASET e DATASET para JSON
 #### https://github.com/viniciussanchez/dataset-serialize/
 
+DataSet Serialize is a set of features to make working with JSON and DataSet simple. It has features such as exporting or importing records into a DataSet, validate if JSON has all required attributes (previously entered in the DataSet), exporting or importing the structure of DataSet fields in JSON format. In addition to managing nested JSON through master detail or using TDataSetField (you choose the way that suits you best). All this using class helpers, which makes it even simpler and easier to use.
 
 
-- Obs. Os arquivos CSV fornecidos pelo download no site, não vem com uma linha de cabeçalho, por isso foram usados arrays para definir os mesmos assim como foi usado tambem para definir os tipos de dados para gerar o JSON corretamente.
+#Notas
+
+- Os arquivos CSV fornecidos pelo download no site, não vem com uma linha de cabeçalho, por isso foram usados arrays para definir os mesmos assim como foi usado tambem para definir os tipos de dados para gerar o JSON corretamente.
 - Voce pode usar o aplicativo apenas para gerar arquivos JSON dos dados Baixados
 - Ele converte os 3 tipos de Arquivos disponivies no site, abaixo link do mesmo, Pedido, Recurso e Solicitante.
 - https://falabr.cgu.gov.br/publico/DownloadDados/DownloadDadosLai.aspx 
