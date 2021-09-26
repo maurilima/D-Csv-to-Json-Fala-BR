@@ -11,8 +11,9 @@ Converter Download de Dados LAI Csv para JSON e/ou Envaiar para BD
 
 
 
-### Firebird 3.0
-   - O Firedac ETL foi configurado para "Limpar"(Truncate)  os arquivos antes de Gavar novo lote, pois os dados fornecidos pelos arquivos baixados incluem sempre todo o mivmento do ano selecinado
+### BD usado:
+## Firebird 3.0
+   - O Firedac ETL foi configurado para "Limpar"(Truncate)  os arquivos antes de Gavar novo lote, pois os dados fornecidos pelos arquivos baixados incluem sempre todo o movimento do ano selecinado
    - Na pasta DatBase tem o SQL para a criação das Tabelas Usadas
 
 ## Boss como gerenciador de dependencias para Delphi
