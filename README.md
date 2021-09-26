@@ -1,5 +1,6 @@
 # D-Csv-to-Json-Fala-BR
-Converter Download de Dados LAI Csv para JSON e/ou Envaiar para BD
+Converter Arquivos do Fala-Br  CSV para JSON, disponibilizados no site da CGU,  ou  Enviar para BD. Atende a LAI sobre transparência. 
+
 
 ## Compilador
 
