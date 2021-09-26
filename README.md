@@ -1,9 +1,8 @@
 # D-Csv-to-Json-Fala-BR
 Converter Download de Dados LAI Csv para JSON e/ou Envaiar para BD
 
+![input-onlinepngtools](https://user-images.githubusercontent.com/12707032/134812906-bf7bd122-8c18-442a-be2d-e5b768a48dda.png)
 
-![RAD_STUDIO_FINAL_ICONS_1024](https://user-images.githubusercontent.com/12707032/134812252-595e5f82-0017-42c6-83d8-e3e6748b4493.png)
-{:height="50px" width="50px"}
 
 
 ### Delphi 10.4 Community Edidtion
