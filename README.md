@@ -9,16 +9,16 @@ Converter Download de Dados LAI Csv para JSON e/ou Envaiar para BD
 ### Delphi 10.4 Community Edidtion
    - Usado o Firedac ETL com batchMove para Gravar no Banco de Dados
    
-#### Foi enviado junto com os fontes uma versao compilada (.exe) para quem nao precisar ou nao queiram baixar e instalar o Delphi Comunnity.
+#### - Foi enviado junto com os fontes uma versao compilada (.exe) para quem nao precisar ou nao queiram baixar e instalar o Delphi Comunnity.
 
-#### Devido a Grande velocidade de Leitura e conversão dos arquivos, nao vi a necessidade de usar Multhreads
+#### - Devido a Grande velocidade de Leitura e conversão dos arquivos, nao vi a necessidade de usar Multhreading.
 
 
 
 ### BD usado:
 ## Firebird 3.0
-   - O Firedac ETL foi configurado para "Limpar"(Truncate)  os arquivos antes de Gavar novo lote, pois os dados fornecidos pelos arquivos baixados incluem sempre todo o movimento do ano selecinado
-   - Na pasta DataBase tem DDL SQL para a criação das Tabelas
+   - O Firedac ETL foi configurado para "Limpar"(Truncate)  os arquivos antes de Gavar novo lote, pois os dados fornecidos pelos arquivos baixados incluem sempre todo o movimento do ano selecinado.
+   - Na pasta DataBase tem DDL SQL para a criação das Tabelas.
 
 ## Boss como gerenciador de dependencias para Delphi
   - para instalar boos
