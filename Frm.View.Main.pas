@@ -195,14 +195,12 @@ var
 begin
   Memo1.Lines.Clear;
   Application.ProcessMessages;
-  Label1.Caption := '';
   if edtNomeCsv.Text = '' then
   begin
     MessageDlg('Selecione um Arquivo para Converter', mtError, [mbOK] , 0  );
     exit
   end;
   lNomeArquivo := edtNomeCsv.Text;
-//    'D:\Usr\Coger\Docs e OutrosDados Abertos\20210920_Pedidos_csv_2021.csv';
   lStream := TFile.OpenText(lNomeArquivo);
   conta := 0;
   aJArray :=  TJSONArray.Create;
@@ -210,6 +208,7 @@ begin
     while not lStream.EndOfStream do
     begin
       lLinha := lStream.ReadLine;
+      //  Filtro Usado para pegar apenas os dados do meu Estado
       if pos(Uppercase('Federal'), Uppercase(lLinha)) = 0 then
         if pos(Uppercase('Roraima'), Uppercase(lLinha)) > 0 then
         begin
