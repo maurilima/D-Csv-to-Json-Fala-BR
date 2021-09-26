@@ -16,7 +16,7 @@ Converter Arquivos do Fala-Br  CSV para JSON, disponibilizados no site da CGU,  
 
 
 
-### BD usado:
+### SGBD usado:
 ## Firebird 3.0
    - O Firedac ETL foi configurado para "Limpar"(Truncate)  os arquivos antes de Gavar novo lote, pois os dados fornecidos pelos arquivos baixados incluem sempre todo o movimento do ano selecinado.
    - Na pasta DataBase tem DDL SQL para a criação das Tabelas.
