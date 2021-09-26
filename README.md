@@ -1,6 +1,8 @@
 # D-Csv-to-Json-Fala-BR
 Converter Download de Dados LAI Csv para JSON e/ou Envaiar para BD
 
+## Compilador
+
 ![output-onlinepngtools](https://user-images.githubusercontent.com/12707032/134813053-e58f3c44-99c9-45a4-8c0a-290e97032adb.png)
 
 
@@ -8,6 +10,8 @@ Converter Download de Dados LAI Csv para JSON e/ou Envaiar para BD
    - Usado o Firedac ETL com batchMove para Gravar no Banco de Dados
    
 #### Foi enviado junto com os fontes uma versao compilada (.exe) para quem nao precisar ou nao queiram baixar e instalar o Delphi Comunnity.
+
+#### Devido a Grande velocidade de Leitura e conversão dos arquivos, nao vi a necessidade de usar Multhreads
 
 
 
@@ -38,12 +42,12 @@ DataSet Serialize is a set of features to make working with JSON and DataSet sim
 - Os arquivos CSV fornecidos pelo download no site, não vem com uma linha de cabeçalho, por isso foram usados arrays para definir os mesmos assim como foi usado tambem para definir os tipos de dados para gerar o JSON corretamente.
 - Voce pode usar o aplicativo apenas para gerar arquivos JSON dos dados Baixados
 - Ele converte os 3 tipos de Arquivos disponivies no site, abaixo link do mesmo, Pedido, Recurso e Solicitante.
-- https://falabr.cgu.gov.br/publico/DownloadDados/DownloadDadosLai.aspx 
-- 
 - 1 = Inteiro/Numerico, 2 = String, 3 = Date
-- Na Pasta Arrays estao disponivveis o arrays usados. Pode ser usado para converter qualquer  que nao disponha de "Cabeçalho" padrao na linha 1 arquivo CSV em Json
-- O Tipo date no firebird Deve ser usado no padrao aaaa-mm-dd devido ao firedac-ETL
-- Foi usado um filtro na leitura do arquivo CSV baixado, localizando "Estadual" e "Roraima" para separa apenas para meu estado. Altere para atender as suas necessidades
+- Na Pasta Arrays estao disponivveis o arrays usados. Pode ser usado para converter qualquer  que nao disponha de "Cabeçalho" padrao na linha 1, de arquivo CSV em Json
+- O Tipo DATE no firebird Deve ser usado no padrao aaaa-mm-dd devido ao firedac-ETL
+- Foi usado um filtro na leitura do arquivo CSV baixado, exclundo "Federal" e incluindo "Roraima" para separar apenas para meu estado. Altere para atender as suas necessidades
+- 
+- https://falabr.cgu.gov.br/publico/DownloadDados/DownloadDadosLai.aspx 
 
 
 
