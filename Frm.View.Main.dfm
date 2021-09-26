@@ -7,13 +7,30 @@ object FrmViewMain: TFrmViewMain
   ClientWidth = 770
   Color = 5592405
   CustomTitleBar.CaptionAlignment = taCenter
+  CustomTitleBar.Enabled = True
+  CustomTitleBar.Height = 26
+  CustomTitleBar.BackgroundColor = 4538937
+  CustomTitleBar.ForegroundColor = clWhite
+  CustomTitleBar.InactiveBackgroundColor = clWhite
+  CustomTitleBar.InactiveForegroundColor = 10066329
+  CustomTitleBar.ButtonForegroundColor = clWhite
+  CustomTitleBar.ButtonBackgroundColor = 4538937
+  CustomTitleBar.ButtonHoverForegroundColor = clWhite
+  CustomTitleBar.ButtonHoverBackgroundColor = 6117964
+  CustomTitleBar.ButtonPressedForegroundColor = clWhite
+  CustomTitleBar.ButtonPressedBackgroundColor = 8420201
+  CustomTitleBar.ButtonInactiveForegroundColor = 10066329
+  CustomTitleBar.ButtonInactiveBackgroundColor = clWhite
   Ctl3D = False
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Segoe UI'
   Font.Style = []
+  GlassFrame.Enabled = True
+  GlassFrame.Top = 26
   OldCreateOrder = False
+  StyleElements = [seFont, seClient]
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
@@ -111,8 +128,6 @@ object FrmViewMain: TFrmViewMain
     ReadOnly = True
     ScrollBars = ssVertical
     TabOrder = 0
-    ExplicitTop = 232
-    ExplicitWidth = 740
   end
   object DBGrid1: TDBGrid
     AlignWithMargins = True
@@ -286,7 +301,6 @@ object FrmViewMain: TFrmViewMain
     Color = 4802889
     ParentBackground = False
     TabOrder = 8
-    ExplicitWidth = 760
     object Label3: TLabel
       AlignWithMargins = True
       Left = 10
@@ -323,7 +337,6 @@ object FrmViewMain: TFrmViewMain
       Font.Style = []
       ParentFont = False
       Layout = tlCenter
-      ExplicitLeft = 491
       ExplicitHeight = 13
     end
   end
